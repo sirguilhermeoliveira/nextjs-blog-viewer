@@ -12,10 +12,13 @@ export default async function PostPage({ params }: PostPageProps) {
   const user = await getUser(post.userId);
 
   return (
+    <>
+    <div className="p-5">
+  <BackButton/>
+    </div>
     <main
       className="max-w-3xl mx-auto p-5 font-sans text-gray-800 leading-relaxed"
     >
-      <BackButton/>
       <article>
         <header className="border-b-2 border-blue-600 pb-4 mb-8">
           <h1 className="text-4xl font-extrabold mb-2 text-gray-900">{post.title}</h1>
@@ -127,5 +130,6 @@ export default async function PostPage({ params }: PostPageProps) {
         </section>
       </article>
     </main>
+     </>
   );
 }

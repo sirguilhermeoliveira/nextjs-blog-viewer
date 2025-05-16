@@ -10,9 +10,13 @@ export default async function UserPage({ params }: UserPageProps) {
   const posts = await getPostByUser(id);
 
   return (
-    <main style={{ maxWidth: 800, margin: 'auto', padding: 20 }}>
-      <BackButton/>
-
+    <>
+    <div className="p-5">
+  <BackButton/>
+    </div>
+    <main
+      className="max-w-3xl mx-auto p-5 font-sans text-gray-800 leading-relaxed"
+    >
         <section
           aria-label="Author details"
           className="mb-6 p-6 bg-blue-50 rounded-lg shadow-md"
@@ -100,5 +104,6 @@ export default async function UserPage({ params }: UserPageProps) {
         )}
       </section>
     </main>
+      </>
   );
 }
