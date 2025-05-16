@@ -1,3 +1,5 @@
+import { User } from "./user";
+
 export interface Post {
   userId: number;
   id: number;
@@ -9,4 +11,9 @@ export interface PostPageProps {
   params: {
     id: string;
   };
+}
+
+export interface PostsListProps {
+  posts: Post[];
+  users: User[];
 }
