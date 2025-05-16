@@ -11,7 +11,7 @@ export default function PostHeader({ title, userId, userName }: PostHeaderProps)
           href={`/users/${userId}`}
           className="text-blue-600 underline hover:text-blue-700"
         >
-          {userName}
+          {userName} 
         </Link>
       </p>
     </header>
