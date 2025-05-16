@@ -1,7 +1,5 @@
 export interface UserPageProps {
-  params: {
-    id: number;
-  };
+  params: Promise<{ id: number }>;
 }
 
 export interface Geo {

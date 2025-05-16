@@ -8,9 +8,7 @@ export interface Post {
 }
 
 export interface PostPageProps {
-  params: {
-    id: string;
-  };
+  params: Promise<{ id: number }>;
 }
 
 export interface PostsListProps {

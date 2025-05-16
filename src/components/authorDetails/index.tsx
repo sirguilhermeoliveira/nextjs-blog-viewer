@@ -36,7 +36,7 @@ export default function AuthorDetails({ email, phone, website, address, company,
       <section aria-label="Company info">
         <h3 className="text-lg font-semibold text-blue-800 mb-2">Company</h3>
         <p className="font-bold">{company.name}</p>
-        <p className="italic text-gray-600">"{company.catchPhrase}"</p>
+<p className="italic text-gray-600">&quot;{company.catchPhrase}&quot;</p>
         <p>{company.bs}</p>
       </section>
       </div>

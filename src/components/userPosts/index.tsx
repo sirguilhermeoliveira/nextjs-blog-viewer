@@ -6,7 +6,7 @@ function UserPosts({ posts }: {posts: Post[]} ) {
   return (
     <section>
       <h2 className="text-2xl font-semibold text-blue-700 border-b border-blue-600 pb-2 mb-6">
-        User's Posts:
+  User&#39;s Posts:
       </h2>
       {posts.length === 0 ? (
         <p>No posts available</p>

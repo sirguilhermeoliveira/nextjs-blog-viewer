@@ -4,7 +4,6 @@ import AuthorDetails from '@/components/authorDetails';
 import BackButton from '@/components/backButton';
 import UserPosts from '@/components/userPosts';
 import { UserPageProps } from '@/types/user';
-import Link from 'next/link';
 
 export default async function UserPage({ params }: UserPageProps) {
     const { id } = await params; 
