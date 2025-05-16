@@ -17,3 +17,11 @@ export interface PostsListProps {
   posts: Post[];
   users: User[];
 }
+export interface PostHeaderProps {
+  title: string;
+  userId: number;
+  userName: string;
+}
+export interface PostContentProps {
+  body: string;
+}
